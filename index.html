@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Kodex | Custom B2B SaaS & Business Software Solutions in Sri Lanka</title>
+    <meta name="description" content="Kodex builds custom ERP systems, SaaS products, and digital growth tools for Sri Lankan enterprises. From FitnessX to PayrollX — software that adapts to your business, not the other way around.">
+    <meta name="keywords" content="B2B SaaS Sri Lanka, custom ERP software, business management software, gym management software, payroll software Sri Lanka, enterprise software development, FitnessX, Kodex">
+    <meta name="author" content="Kodex Business Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kodex.lk/">
+
+    <!-- Open Graph (LinkedIn, Facebook, WhatsApp previews) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kodex.lk/">
+    <meta property="og:title" content="Kodex | Custom B2B SaaS & Business Software for Sri Lankan Enterprises">
+    <meta property="og:description" content="Custom ERP systems, SaaS products, and digital growth tools built for Sri Lankan businesses. Book a free systems audit today.">
+    <meta property="og:image" content="https://kodex.lk/og-image.png">
+    <meta property="og:locale" content="en_LK">
+    <meta property="og:site_name" content="Kodex Business Solutions">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kodex | Custom B2B SaaS & Business Software for Sri Lankan Enterprises">
+    <meta name="twitter:description" content="Custom ERP systems, SaaS products, and digital growth tools built for Sri Lankan businesses.">
+    <meta name="twitter:image" content="https://kodex.lk/og-image.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Kodex Business Solutions",
+      "url": "https://kodex.lk",
+      "description": "Custom ERP systems, B2B SaaS products, and digital growth tools for Sri Lankan enterprises.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "LKR"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kodex Business Solutions",
+        "url": "https://kodex.lk",
+        "areaServed": "LK",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@kodex.lk"
+        }
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-navy: #0F314D;
+            --accent-aqua: #23D3AD;
+            --bg-light: #F8FAFC;
+            --text-main: #334155;
+            --text-light: #64748B;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-navy);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-navy);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-aqua);
+            color: var(--primary-navy);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--accent-aqua);
+            color: var(--primary-navy);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-aqua);
+            color: var(--white);
+        }
+
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-navy);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent-aqua);
+        }
+
+        .nav-links {
+            display: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-aqua);
+        }
+
+        .mobile-menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-navy);
+            cursor: pointer;
+        }
+
+        /* Mobile menu overlay */
+        .mobile-nav {
+            display: none;
+            flex-direction: column;
+            background: var(--white);
+            padding: 20px;
+            border-top: 1px solid #E2E8F0;
+            gap: 15px;
+        }
+
+        .mobile-nav.open {
+            display: flex;
+        }
+
+        .mobile-nav a {
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 8px 0;
+            border-bottom: 1px solid #F1F5F9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--white) 0%, #E2E8F0 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border-top: 4px solid var(--accent-aqua);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+        }
+
+        .content-section {
+            background-color: var(--white);
+            padding: 80px 20px;
+        }
+
+        .content-section:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact form */
+        .contact-section {
+            background: var(--primary-navy);
+            padding: 80px 20px;
+        }
+
+        .contact-section h2 {
+            color: var(--white);
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-section .subtitle {
+            color: #94A3B8;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border: 1px solid #1E4A6E;
+            background: rgba(255,255,255,0.05);
+            color: var(--white);
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #64748B;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent-aqua);
+        }
+
+        .contact-form select option {
+            background: var(--primary-navy);
+            color: var(--white);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form .btn-submit {
+            background: var(--accent-aqua);
+            color: var(--primary-navy);
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .contact-form .btn-submit:hover {
+            opacity: 0.9;
+        }
+
+        /* Trust bar */
+        .trust-bar {
+            background: var(--white);
+            padding: 30px 20px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .trust-bar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-light);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .trust-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: var(--primary-navy);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #94A3B8;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #94A3B8;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-aqua);
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+                align-items: center;
+            }
+            .mobile-menu-btn {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .hero-buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .content-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+                align-items: center;
+            }
+            .form-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">KODEX<span>.</span></div>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#suite">The Suite</a>
+                <a href="#erp">Custom Solutions</a>
+                <a href="#fitnessx">FitnessX</a>
+                <a href="#contact" class="btn btn-primary">Book a Demo</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+            <a href="#suite" onclick="toggleMenu()">The Suite</a>
+            <a href="#erp" onclick="toggleMenu()">Custom Solutions</a>
+            <a href="#fitnessx" onclick="toggleMenu()">FitnessX</a>
+            <a href="#contact" onclick="toggleMenu()">Book a Demo</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Next-Generation SaaS &amp; Digital Growth for Sri Lankan Enterprises.</h1>
+            <p>From scalable business management tools to targeted digital marketing, Kodex architects the software and strategies that power modern companies.</p>
+            <div class="hero-buttons">
+                <a href="#suite" class="btn btn-primary">Explore Our Solutions</a>
+                <a href="#contact" class="btn btn-outline">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust signals -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <div class="trust-icon">&#127470;&#127472;</div>
+                <span>Built in Sri Lanka</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">&#128274;</div>
+                <span>Enterprise-Grade Security</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">&#9889;</div>
+                <span>Fast Implementation</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">&#128187;</div>
+                <span>Custom Development</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">&#128222;</div>
+                <span>Dedicated Support</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="suite" class="container">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+            <h2>The Kodex Suite</h2>
+            <p>Purpose-built software solutions designed to streamline complex workflows across multiple industries.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card">
+                <h3>BusinessX</h3>
+                <p>Comprehensive business management systems designed to streamline complex workflows and centralize your operations seamlessly.</p>
+                <a href="#contact" style="color: var(--accent-aqua); font-weight: 600;">Learn More &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>FitnessX</h3>
+                <p>Specialized, all-in-one operational software to manage memberships, scheduling, and billing for modern fitness centers.</p>
+                <a href="#fitnessx" style="color: var(--accent-aqua); font-weight: 600;">Learn More &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>PayrollX</h3>
+                <p>Enterprise-grade payroll architecture. Built to securely handle complex compensation structures and multi-branch institutions.</p>
+                <a href="#contact" style="color: var(--accent-aqua); font-weight: 600;">Learn More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="erp" class="content-section">
+        <div class="container content-grid">
+            <div>
+                <p style="color: var(--accent-aqua); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; margin-bottom: 8px;">Custom ERP &amp; Business Software</p>
+                <h2>Stop Adapting to Your Software. Make Your Software Adapt to You.</h2>
+                <p>Off-the-shelf software often forces you to change how you run your business. At Kodex, we engineer <strong>custom business solutions</strong> that fit your exact operational blueprints. From automating daily tasks to centralizing complex multi-branch data, we build the digital infrastructure modern Sri Lankan enterprises need to scale without friction.</p>
+
+                <h3>Core Capabilities:</h3>
+                <ul>
+                    <li><strong>Workflow Automation:</strong> Eliminate manual data entry and connect your departments.</li>
+                    <li><strong>Multi-Branch Management:</strong> Built to scale seamlessly across networks.</li>
+                    <li><strong>Seamless Integrations:</strong> Bridge the gap between custom software and third-party apps.</li>
+                    <li><strong>Data-Driven Dashboards:</strong> Make informed decisions instantly.</li>
+                </ul>
+                <br>
+                <a href="#contact" class="btn btn-primary">Schedule a Free Systems Audit</a>
+            </div>
+            <div style="background: var(--bg-light); border-radius: 12px; height: 100%; min-height: 400px; border: 2px dashed #CBD5E1; display: flex; align-items: center; justify-content: center;">
+                <p style="color: #94A3B8;">[ ERP Dashboard Graphic ]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fitnessx" class="content-section">
+        <div class="container content-grid">
+            <div style="background: var(--bg-light); border-radius: 12px; height: 100%; min-height: 400px; border: 2px dashed #CBD5E1; display: flex; align-items: center; justify-content: center; order: -1;">
+                <p style="color: #94A3B8;">[ Mobile App Interface Graphic ]</p>
+            </div>
+            <div>
+                <p style="color: var(--accent-aqua); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; margin-bottom: 8px;">FitnessX</p>
+                <h2>The All-In-One Gym Member Management Software</h2>
+                <p>Running a fitness center shouldn't mean being tied to a front desk. <strong>FitnessX</strong> is a mobile-first, comprehensive software solution designed to automate the heavy lifting of gym administration. We handle the operations, so you can focus on your members' results.</p>
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><strong>Automated Billing &amp; Invoicing:</strong> Handles recurring fees and secure transactions.</li>
+                    <li><strong>Member Profile Tracking:</strong> Maintain detailed digital records for every client.</li>
+                    <li><strong>Mobile-First Access:</strong> Get full administrative control right from your smartphone.</li>
+                    <li><strong>Access Control &amp; Attendance:</strong> Monitor facility usage and track member check-ins.</li>
+                </ul>
+                <br>
+                <a href="#contact" class="btn btn-primary">Get a Live Demo of FitnessX</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Lead Capture -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Let's Build Something Together</h2>
+            <p class="subtitle">Tell us about your business. We'll respond within 1 business day.</p>
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Work Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="company" placeholder="Company Name">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                </div>
+                <select name="interest" required>
+                    <option value="" disabled selected>I'm interested in...</option>
+                    <option value="businessx">BusinessX — Business Management</option>
+                    <option value="fitnessx">FitnessX — Gym Management</option>
+                    <option value="payrollx">PayrollX — Payroll System</option>
+                    <option value="custom-erp">Custom ERP / Software</option>
+                    <option value="other">Other / Not Sure Yet</option>
+                </select>
+                <textarea name="message" placeholder="Briefly describe your business challenge or what you'd like to automate..."></textarea>
+                <button type="submit" class="btn-submit">Send Message &rarr;</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 20px; color: var(--white);">KODEX<span style="color: var(--accent-aqua);">.</span></div>
+            <div class="footer-links">
+                <a href="#suite">The Suite</a>
+                <a href="#erp">Custom Solutions</a>
+                <a href="#fitnessx">FitnessX</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2026 Kodex Business Solutions. All Rights Reserved. Built in Sri Lanka.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mobileNav');
+            nav.classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>
