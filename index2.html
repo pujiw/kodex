@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#093655">
 
-    <title>Kodex Dark | B2B SaaS — ERP, Fleet Management & Business Software</title>
+    <title>Kodex | B2B SaaS — ERP, Fleet Management & Business Software</title>
     <meta name="description" content="Kodex builds scalable B2B SaaS products for modern businesses — ERP, fleet management, payroll, and fitness software. Purpose-built, globally available.">
     <meta name="keywords" content="B2B SaaS software, ERP software, fleet management software, payroll software, gym management software, business management software, SaaS ERP, FleetX, FitnessX, PayrollX, BusinessX, Kodex, Sri Lanka SaaS">
     <meta name="author" content="Kodex Business Solutions">
@@ -57,16 +57,14 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 
     <style>
-        /* ── TOKENS — DARK ── */
+        /* ── TOKENS ── */
         :root {
-            --ink:    #f0f0f0;
-            --ink2:   #d4d4d4;
-            --muted:  #8b95a1;
-            --faint:  #555e6b;
-            --line:   #1e2530;
-            --bg:     #0b0f14;
-            --bg2:    #0e1520;
-            --bg3:    #111823;
+            --ink:    #0d0d0d;
+            --ink2:   #1a1a1a;
+            --muted:  #6b7280;
+            --faint:  #9ca3af;
+            --line:   #e5e7eb;
+            --bg:     #ffffff;
             --aqua:   #1fe3c0;
             --aqua-d: #17c4a6;
             --navy:   #093655;
@@ -85,9 +83,6 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Dark mode colour overrides for hardcoded values */
-        ::selection { background: rgba(31,227,192,.25); color: #fff; }
-
         a { text-decoration:none; color:inherit; }
 
         /* Skip link — a11y */
@@ -103,7 +98,7 @@
         /* ── NAV ── */
         header {
             position: sticky; top: 0; z-index: 200;
-            background: rgba(11,15,20,0.88);
+            background: rgba(255,255,255,0.88);
             backdrop-filter: blur(20px) saturate(180%);
             border-bottom: 1px solid var(--line);
         }
@@ -139,11 +134,11 @@
         .nav-links a:hover::after { transform: scaleX(1); }
         .nav-cta {
             font-size: .875rem; font-weight: 600;
-            background: var(--aqua); color: #07100f;
+            background: var(--ink); color: #fff;
             padding: 8px 18px; border-radius: 6px;
             transition: background .2s, transform .2s;
         }
-        .nav-cta:hover { background: var(--aqua-d); transform: translateY(-1px); }
+        .nav-cta:hover { background: var(--navy); transform: translateY(-1px); }
         .nav-cta::after { display:none !important; }
         .burger {
             display: flex; flex-direction: column; gap: 5px;
@@ -153,7 +148,7 @@
         .mobile-nav {
             display: none; flex-direction: column;
             border-top: 1px solid var(--line);
-            background: var(--bg2); padding: 12px 24px 20px;
+            background: var(--bg); padding: 12px 24px 20px;
         }
         .mobile-nav.open { display: flex; }
         .mobile-nav a {
@@ -208,12 +203,12 @@
         .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
         .btn-dark {
             display: inline-flex; align-items: center; gap: 8px;
-            background: var(--aqua); color: #07100f;
+            background: var(--ink); color: #fff;
             padding: 12px 22px; border-radius: 8px;
             font-size: .9rem; font-weight: 600;
             transition: background .2s, transform .2s;
         }
-        .btn-dark:hover { background: var(--aqua-d); transform: translateY(-1px); }
+        .btn-dark:hover { background: var(--navy); transform: translateY(-1px); }
         .btn-text {
             display: inline-flex; align-items: center; gap: 6px;
             font-size: .9rem; font-weight: 500; color: var(--muted);
@@ -228,11 +223,11 @@
             position: relative;
         }
         .hero-card {
-            background: var(--bg2);
+            background: #fff;
             border: 1px solid var(--line);
             border-radius: 14px;
             padding: 20px;
-            box-shadow: 0 4px 40px rgba(0,0,0,.4), 0 1px 4px rgba(0,0,0,.2);
+            box-shadow: 0 4px 24px rgba(0,0,0,.06), 0 1px 4px rgba(0,0,0,.04);
             animation: floatY 5s ease-in-out infinite;
         }
         @keyframes floatY {
@@ -248,17 +243,17 @@
         .hc-label { font-size: .75rem; font-weight: 700; color: var(--muted); margin-left:4px; letter-spacing:.04em; }
         .hero-stat-row { display: grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-bottom:14px; }
         .hero-stat-box {
-            background: var(--bg3); border: 1px solid var(--line);
+            background: #fafafa; border: 1px solid var(--line);
             border-radius: 8px; padding: 12px 10px; text-align:center;
         }
         .hsb-val { font-size: 1.15rem; font-weight: 700; color: var(--ink); letter-spacing:-.02em; }
         .hsb-val.green { color: var(--aqua-d); }
         .hsb-lbl { font-size: .65rem; color: var(--faint); font-weight:500; margin-top:2px; text-transform:uppercase; letter-spacing:.05em; }
-        .hero-mini-chart { background:var(--bg3); border:1px solid var(--line); border-radius:8px; padding:12px; margin-bottom:14px; }
+        .hero-mini-chart { background:#fafafa; border:1px solid var(--line); border-radius:8px; padding:12px; margin-bottom:14px; }
         .hmc-label { font-size:.68rem; font-weight:600; color:var(--muted); margin-bottom:8px; }
         .hmc-bars { display:flex; align-items:flex-end; gap:4px; height:48px; }
         .hmc-bar { flex:1; border-radius:3px 3px 0 0; }
-        .hero-table { border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--bg3); }
+        .hero-table { border:1px solid var(--line); border-radius:8px; overflow:hidden; }
         .hero-row {
             display:flex; align-items:center; gap:10px;
             padding:8px 12px; border-bottom:1px solid var(--line); font-size:.75rem;
@@ -269,15 +264,15 @@
         .hr-tag {
             font-size:.65rem; font-weight:700; padding:2px 8px; border-radius:100px;
         }
-        .tag-green { background:rgba(35,211,173,.18); color:var(--aqua); }
-        .tag-amber { background:rgba(245,158,11,.15); color:#f59e0b; }
+        .tag-green { background:rgba(35,211,173,.12); color:var(--aqua-d); }
+        .tag-amber { background:rgba(245,158,11,.1); color:#b45309; }
 
         /* floating secondary card */
         .hero-mini-card {
             position: absolute; bottom: -20px; left: -28px;
-            background: var(--bg2); border: 1px solid var(--line);
+            background: #fff; border: 1px solid var(--line);
             border-radius: 12px; padding: 12px 16px;
-            box-shadow: 0 8px 32px rgba(0,0,0,.4);
+            box-shadow: 0 8px 32px rgba(0,0,0,.08);
             display: flex; align-items: center; gap: 10px;
             animation: floatY2 6s 1s ease-in-out infinite;
         }
@@ -332,27 +327,24 @@
 
         /* ── CLIENTS ── */
         .clients {
-            background: var(--bg2);
+            background: var(--bg);
             padding: 52px 0;
             overflow: hidden;
             border-top: 1px solid var(--line);
             border-bottom: 1px solid var(--line);
-        }
-        .clients-inner {
-            max-width: 1100px; margin: 0 auto; padding: 0 24px;
         }
         .clients-label {
             text-align: center;
             font-size: .72rem; font-weight: 700; letter-spacing: .12em;
             text-transform: uppercase; color: var(--faint); margin-bottom: 32px;
         }
-        .clients-track-wrap { overflow: hidden; position: relative; border-radius: 8px; }
+        .clients-track-wrap { overflow: hidden; position: relative; }
         .clients-track-wrap::before,
         .clients-track-wrap::after {
             content: ''; position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none;
         }
-        .clients-track-wrap::before { left: 0; background: linear-gradient(to right, var(--bg2), transparent); }
-        .clients-track-wrap::after  { right: 0; background: linear-gradient(to left, var(--bg2), transparent); }
+        .clients-track-wrap::before { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
+        .clients-track-wrap::after  { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
         .clients-track {
             display: flex; gap: 56px; align-items: center;
             width: max-content;
@@ -375,27 +367,27 @@
         .client-logo:hover svg { opacity: 1; stroke: var(--aqua); }
         .suite-header { text-align:center; max-width:600px; margin:0 auto 56px; }
         .suite-header .s-p { max-width:100%; }
-        .suite-grid { display:grid; grid-template-columns:1fr; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,.3); }
+        .suite-grid { display:grid; grid-template-columns:1fr; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
         @media(min-width:768px){ .suite-grid { grid-template-columns:repeat(4,1fr) !important; } }
         .suite-card {
-            background: var(--bg2); padding:40px 32px;
+            background: var(--bg); padding:40px 32px;
             transition: background .2s;
             position: relative;
         }
-        .suite-card:hover { background: var(--bg3); }
+        .suite-card:hover { background: #fafafa; }
         .suite-num {
             font-size:.72rem; font-weight:700; letter-spacing:.1em;
             color: var(--faint); text-transform:uppercase; margin-bottom:20px;
         }
         .suite-icon {
             width:40px; height:40px; border-radius:10px;
-            border:1px solid var(--line); background:var(--bg3); display:flex; align-items:center; justify-content:center;
+            border:1px solid var(--line); display:flex; align-items:center; justify-content:center;
             margin-bottom:20px;
         }
         .suite-card h3 { font-size:1.15rem; font-weight:700; color:var(--ink); margin-bottom:10px; letter-spacing:-.01em; }
         .suite-card p { font-size:.875rem; color:var(--muted); line-height:1.7; margin-bottom:20px; }
         .suite-link {
-            font-size:.825rem; font-weight:600; color:var(--aqua);
+            font-size:.825rem; font-weight:600; color:var(--ink);
             display:inline-flex; align-items:center; gap:6px;
             transition: gap .2s, color .2s;
         }
@@ -433,21 +425,21 @@
         }
         .em-dot { width:9px; height:9px; border-radius:50%; }
         .em-title { font-size:.7rem; font-weight:600; color:rgba(255,255,255,.35); margin-left:10px; }
-        .em-body { padding:16px; background:var(--bg2); }
+        .em-body { padding:16px; background:#fff; }
         .em-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:12px; }
-        .em-stat { background:var(--bg3); border:1px solid var(--line); border-radius:8px; padding:12px; }
+        .em-stat { background:#fafafa; border:1px solid var(--line); border-radius:8px; padding:12px; }
         .em-s-label { font-size:.62rem; color:var(--faint); font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px; }
         .em-s-val { font-size:1.1rem; font-weight:700; color:var(--ink); letter-spacing:-.02em; }
         .em-s-val.g { color:var(--aqua-d); }
-        .em-chart { background:var(--bg3); border:1px solid var(--line); border-radius:8px; padding:12px 12px 8px; margin-bottom:12px; }
+        .em-chart { background:#fafafa; border:1px solid var(--line); border-radius:8px; padding:12px 12px 8px; margin-bottom:12px; }
         .em-chart-title { font-size:.68rem; font-weight:600; color:var(--muted); margin-bottom:10px; }
         .em-bars { display:flex; align-items:flex-end; gap:5px; height:52px; }
         .em-b { flex:1; border-radius:3px 3px 0 0; }
-        .em-list { border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--bg3); }
+        .em-list { border:1px solid var(--line); border-radius:8px; overflow:hidden; }
         .em-row { display:flex; align-items:center; padding:8px 12px; gap:10px; border-bottom:1px solid var(--line); }
         .em-row:last-child { border-bottom:none; }
         .em-ava { width:20px; height:20px; border-radius:50%; flex-shrink:0; }
-        .em-line { height:7px; border-radius:3px; background:#1e2530; flex:1; }
+        .em-line { height:7px; border-radius:3px; background:#e5e7eb; flex:1; }
         .em-pct { font-size:.68rem; font-weight:700; }
 
         /* Fitness app mock */
@@ -492,14 +484,13 @@
         .currency-toggle {
             display:flex; align-items:center; gap:0; width:fit-content;
             margin:0 auto 16px; border:1px solid var(--line); border-radius:10px; overflow:hidden;
-            background:var(--bg3);
         }
         .currency-toggle button {
             padding:9px 24px; font-family:var(--f); font-size:.875rem; font-weight:600;
             border:none; cursor:pointer; background:transparent; color:var(--muted);
             transition: background .2s, color .2s;
         }
-        .currency-toggle button.active { background:var(--aqua); color:#07100f; }
+        .currency-toggle button.active { background:var(--ink); color:#fff; }
         .rate-note { font-size:.72rem; color:var(--faint); text-align:center; margin-bottom:44px; }
         .rate-note strong { color:var(--ink); font-weight:600; }
         .pricing-grid {
@@ -509,11 +500,11 @@
         @media(min-width:700px){ .pricing-grid { grid-template-columns:repeat(3,1fr); } }
         .price-card {
             border:1px solid var(--line); border-radius:16px;
-            padding:32px 28px; background:var(--bg2); position:relative;
+            padding:32px 28px; background:#fff; position:relative;
             transition: box-shadow .25s, transform .25s;
         }
-        .price-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,.4); }
-        .price-card.featured { border-color:var(--aqua); box-shadow:0 4px 32px rgba(31,227,192,.2); }
+        .price-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(0,0,0,.07); }
+        .price-card.featured { border-color:var(--aqua); box-shadow:0 4px 24px rgba(31,227,192,.13); }
         .price-card.featured::before {
             content:'Most Popular'; position:absolute; top:-12px; left:50%; transform:translateX(-50%);
             background:var(--aqua); color:var(--navy); font-size:.68rem; font-weight:800;
@@ -533,14 +524,14 @@
             display:block; width:100%; padding:12px; border-radius:8px;
             font-family:var(--f); font-size:.9rem; font-weight:700; text-align:center;
             cursor:pointer; transition:all .2s; text-decoration:none;
-            border:1px solid var(--line); background:var(--bg3); color:var(--ink);
+            border:1px solid var(--line); background:#fafafa; color:var(--ink);
         }
-        .price-card.featured .price-btn { background:var(--aqua); color:#07100f; border-color:var(--aqua); }
-        .price-btn:hover { background:var(--aqua); color:#07100f; border-color:var(--aqua); }
+        .price-card.featured .price-btn { background:var(--ink); color:#fff; border-color:var(--ink); }
+        .price-btn:hover { background:var(--navy); color:#fff; border-color:var(--navy); }
 
         /* ── CONTACT ── */
         .contact-wrap {
-            background: var(--bg2); border:1px solid var(--line);
+            background: #fafafa; border:1px solid var(--line);
             border-radius:20px; padding:56px 48px;
             max-width: 680px; margin: 0 auto;
         }
@@ -553,9 +544,8 @@
         .c-form input, .c-form select, .c-form textarea {
             width:100%; padding:13px 16px;
             border: 1px solid var(--line); border-radius:8px;
-            background:var(--bg3); font-family:var(--f); font-size:.9rem; color:var(--ink);
+            background:#fff; font-family:var(--f); font-size:.9rem; color:var(--ink);
             outline:none; transition: border-color .2s, box-shadow .2s;
-            color-scheme: dark;
         }
         .c-form input::placeholder, .c-form textarea::placeholder { color:var(--faint); }
         .c-form input:focus, .c-form select:focus, .c-form textarea:focus {
@@ -565,18 +555,17 @@
         .c-form select { color:var(--muted); }
         .c-form textarea { resize:vertical; min-height:110px; }
         .c-submit {
-            background: var(--aqua); color:#07100f;
+            background: var(--ink); color:#fff;
             border:none; padding:14px 24px; border-radius:8px;
             font-family:var(--f); font-size:.95rem; font-weight:700;
             cursor:pointer; transition: background .2s, transform .2s;
         }
-        .c-submit:hover { background: var(--aqua-d); transform:translateY(-1px); }
+        .c-submit:hover { background: var(--navy); transform:translateY(-1px); }
 
         /* ── FOOTER ── */
         footer {
             border-top: 1px solid var(--line);
             padding: 48px 24px 36px;
-            background: var(--bg2);
         }
         .footer-inner {
             max-width:1100px; margin:0 auto;
@@ -595,11 +584,11 @@
         /* ── FAQ ── */
         .faq-list { display:flex; flex-direction:column; gap:10px; margin-top:36px; }
         .faq-item {
-            background:var(--bg2); border:1px solid var(--line);
+            background:#fff; border:1px solid var(--line);
             border-radius:12px; padding:18px 22px;
             transition: border-color .2s, box-shadow .2s;
         }
-        .faq-item[open] { border-color:#2a3444; box-shadow:0 4px 16px rgba(0,0,0,.3); }
+        .faq-item[open] { border-color:#d1d5db; box-shadow:0 4px 16px rgba(0,0,0,.04); }
         .faq-item summary {
             cursor:pointer; font-size:1rem; font-weight:600; color:var(--ink);
             list-style:none; display:flex; justify-content:space-between; align-items:center;
@@ -708,11 +697,11 @@
             <div class="hero-mini-chart">
                 <div class="hmc-label">Monthly Revenue — 2025</div>
                 <div class="hmc-bars">
-                    <div class="hmc-bar" style="height:40%;background:#1e2530"></div>
-                    <div class="hmc-bar" style="height:52%;background:#1e2530"></div>
-                    <div class="hmc-bar" style="height:44%;background:#1e2530"></div>
-                    <div class="hmc-bar" style="height:68%;background:#1e2530"></div>
-                    <div class="hmc-bar" style="height:58%;background:#1e2530"></div>
+                    <div class="hmc-bar" style="height:40%;background:#e5e7eb"></div>
+                    <div class="hmc-bar" style="height:52%;background:#e5e7eb"></div>
+                    <div class="hmc-bar" style="height:44%;background:#e5e7eb"></div>
+                    <div class="hmc-bar" style="height:68%;background:#e5e7eb"></div>
+                    <div class="hmc-bar" style="height:58%;background:#e5e7eb"></div>
                     <div class="hmc-bar" style="height:80%;background:var(--aqua)"></div>
                     <div class="hmc-bar" style="height:74%;background:rgba(35,211,173,.4)"></div>
                     <div class="hmc-bar" style="height:90%;background:rgba(35,211,173,.2)"></div>
@@ -750,7 +739,7 @@
 </div>
 
 <!-- ── TRUST ── -->
-<div class="trust" style="background:var(--bg2);">
+<div class="trust">
     <div class="trust-inner">
         <div class="trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -777,7 +766,6 @@
 
 <!-- ── CLIENTS ── -->
 <div class="clients">
-    <div class="clients-inner">
     <p class="clients-label">Trusted by businesses across industries</p>
     <div class="clients-track-wrap">
         <div class="clients-track">
@@ -849,11 +837,10 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
 
 <!-- ── THE SUITE ── -->
-<section id="suite" class="section" style="background:var(--bg);">
+<section id="suite" class="section">
     <div class="section-max">
         <div class="suite-header reveal">
             <p class="s-eyebrow">01 — The Suite</p>
@@ -864,7 +851,7 @@
             <div class="suite-card reveal">
                 <p class="suite-num">01</p>
                 <div class="suite-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--aqua)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
                 </div>
                 <h3>BusinessX</h3>
                 <p>Comprehensive business management systems designed to streamline complex workflows and centralize your operations seamlessly.</p>
@@ -876,7 +863,7 @@
             <div class="suite-card reveal reveal-d1">
                 <p class="suite-num">02</p>
                 <div class="suite-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--aqua)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
                 </div>
                 <h3>FitnessX</h3>
                 <p>Specialized, all-in-one operational software to manage memberships, scheduling, and billing for modern fitness centers.</p>
@@ -888,7 +875,7 @@
             <div class="suite-card reveal reveal-d2">
                 <p class="suite-num">03</p>
                 <div class="suite-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--aqua)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
                 </div>
                 <h3>PayrollX</h3>
                 <p>Enterprise-grade payroll architecture built to securely handle complex compensation structures and multi-branch institutions.</p>
@@ -900,7 +887,7 @@
             <div class="suite-card reveal reveal-d3">
                 <p class="suite-num">04</p>
                 <div class="suite-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--aqua)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                 </div>
                 <h3>FleetX</h3>
                 <p>Full ERP-integrated fleet management system — track vehicles, manage drivers, and automate fleet operations across Sri Lanka.</p>
@@ -914,7 +901,7 @@
 </section>
 
 <!-- ── ERP ── -->
-<section id="erp" class="section" style="padding-top:0;background:var(--bg);">
+<section id="erp" class="section" style="padding-top:0;">
     <div class="section-max">
         <div class="feature-split">
             <div class="feat-copy reveal">
@@ -942,7 +929,7 @@
                 <a href="#contact" class="btn-dark">Schedule a Free Systems Audit</a>
             </div>
             <div class="feat-vis reveal reveal-d2">
-                <div class="erp-mock" style="border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.5);">
+                <div class="erp-mock">
                     <div class="em-bar">
                         <div class="em-dot" style="background:#ff5f57"></div>
                         <div class="em-dot" style="background:#febc2e"></div>
@@ -967,11 +954,11 @@
                         <div class="em-chart">
                             <div class="em-chart-title">Monthly Revenue — 2025</div>
                             <div class="em-bars">
-                                <div class="em-b" style="height:38%;background:#1e2530"></div>
-                                <div class="em-b" style="height:50%;background:#1e2530"></div>
-                                <div class="em-b" style="height:42%;background:#1e2530"></div>
-                                <div class="em-b" style="height:65%;background:#1e2530"></div>
-                                <div class="em-b" style="height:56%;background:#1e2530"></div>
+                                <div class="em-b" style="height:38%;background:#e5e7eb"></div>
+                                <div class="em-b" style="height:50%;background:#e5e7eb"></div>
+                                <div class="em-b" style="height:42%;background:#e5e7eb"></div>
+                                <div class="em-b" style="height:65%;background:#e5e7eb"></div>
+                                <div class="em-b" style="height:56%;background:#e5e7eb"></div>
                                 <div class="em-b" style="height:82%;background:var(--aqua)"></div>
                                 <div class="em-b" style="height:75%;background:rgba(35,211,173,.35)"></div>
                                 <div class="em-b" style="height:92%;background:rgba(35,211,173,.15)"></div>
@@ -1087,7 +1074,7 @@
 </section>
 
 <!-- ── FLEETX ── -->
-<section id="fleetx" class="section" style="background:var(--bg2);padding-top:0;">
+<section id="fleetx" class="section" style="padding-top:0;">
     <div class="section-max">
         <div class="feature-split">
             <div class="feat-copy reveal">
@@ -1105,21 +1092,21 @@
                 <a href="#contact" class="btn-dark">Get a FleetX Demo</a>
             </div>
             <div class="feat-vis reveal reveal-d2">
-                <div style="border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.5);">
+                <div style="border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.07);">
                     <div style="background:#0d0d0d;padding:10px 16px;display:flex;align-items:center;gap:6px;">
                         <div style="width:9px;height:9px;border-radius:50%;background:#ff5f57"></div>
                         <div style="width:9px;height:9px;border-radius:50%;background:#febc2e"></div>
                         <div style="width:9px;height:9px;border-radius:50%;background:#28c840"></div>
                         <span style="font-size:.7rem;font-weight:600;color:rgba(255,255,255,.35);margin-left:10px;">FleetX — Live Operations</span>
                     </div>
-                    <div style="background:var(--bg2);padding:16px;">
+                    <div style="background:#fff;padding:16px;">
                         <!-- map -->
-                        <div style="background:#0d1929;border:1px solid var(--line);border-radius:10px;height:160px;position:relative;overflow:hidden;margin-bottom:12px;">
-                            <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(31,227,192,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(31,227,192,.06) 1px,transparent 1px);background-size:24px 24px;"></div>
-                            <div style="position:absolute;top:38%;left:0;right:0;height:2px;background:rgba(255,255,255,.12);"></div>
-                            <div style="position:absolute;top:62%;left:0;right:0;height:2px;background:rgba(255,255,255,.12);"></div>
-                            <div style="position:absolute;left:30%;top:0;bottom:0;width:2px;background:rgba(255,255,255,.12);"></div>
-                            <div style="position:absolute;left:65%;top:0;bottom:0;width:2px;background:rgba(255,255,255,.12);"></div>
+                        <div style="background:#f0f5fb;border:1px solid var(--line);border-radius:10px;height:160px;position:relative;overflow:hidden;margin-bottom:12px;">
+                            <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(200,215,230,.4) 1px,transparent 1px),linear-gradient(90deg,rgba(200,215,230,.4) 1px,transparent 1px);background-size:24px 24px;"></div>
+                            <div style="position:absolute;top:38%;left:0;right:0;height:2px;background:rgba(255,255,255,.9);"></div>
+                            <div style="position:absolute;top:62%;left:0;right:0;height:2px;background:rgba(255,255,255,.9);"></div>
+                            <div style="position:absolute;left:30%;top:0;bottom:0;width:2px;background:rgba(255,255,255,.9);"></div>
+                            <div style="position:absolute;left:65%;top:0;bottom:0;width:2px;background:rgba(255,255,255,.9);"></div>
                             <!-- pins -->
                             <div style="position:absolute;top:28%;left:23%;background:var(--aqua);width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(35,211,173,.2);">
                                 <svg width="8" height="8" viewBox="0 0 24 24" fill="#fff" stroke="none"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/></svg>
@@ -1134,25 +1121,25 @@
                         </div>
                         <!-- stats -->
                         <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px;">
-                            <div style="background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;">
+                            <div style="background:#fafafa;border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;">
                                 <div style="font-size:1.1rem;font-weight:700;color:var(--ink);letter-spacing:-.02em;">24</div>
                                 <div style="font-size:.62rem;color:var(--faint);font-weight:500;margin-top:2px;text-transform:uppercase;letter-spacing:.05em;">Vehicles</div>
                             </div>
-                            <div style="background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;">
+                            <div style="background:#fafafa;border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;">
                                 <div style="font-size:1.1rem;font-weight:700;color:var(--aqua-d);letter-spacing:-.02em;">18</div>
                                 <div style="font-size:.62rem;color:var(--faint);font-weight:500;margin-top:2px;text-transform:uppercase;letter-spacing:.05em;">Active</div>
                             </div>
-                            <div style="background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;">
+                            <div style="background:#fafafa;border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;">
                                 <div style="font-size:1.1rem;font-weight:700;color:#d97706;letter-spacing:-.02em;">3</div>
                                 <div style="font-size:.62rem;color:var(--faint);font-weight:500;margin-top:2px;text-transform:uppercase;letter-spacing:.05em;">Service Due</div>
                             </div>
-                            <div style="background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;">
+                            <div style="background:#fafafa;border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;">
                                 <div style="font-size:1.1rem;font-weight:700;color:var(--aqua-d);letter-spacing:-.02em;">↓12%</div>
                                 <div style="font-size:.62rem;color:var(--faint);font-weight:500;margin-top:2px;text-transform:uppercase;letter-spacing:.05em;">Fuel Cost</div>
                             </div>
                         </div>
                         <!-- vehicle list -->
-                        <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg3);">
+                        <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;">
                             <div style="display:flex;align-items:center;padding:8px 12px;gap:10px;border-bottom:1px solid var(--line);font-size:.75rem;">
                                 <div style="width:20px;height:20px;border-radius:50%;background:rgba(35,211,173,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                                     <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--aqua)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
@@ -1183,7 +1170,7 @@
 </section>
 
 <!-- ── PRICING ── -->
-<section id="pricing" class="section" style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+<section id="pricing" class="section" style="background:#fafafa;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
     <div class="section-max">
         <div class="pricing-header reveal">
             <p class="s-eyebrow">BusinessX Pricing</p>
@@ -1258,7 +1245,7 @@
 </section>
 
 <!-- ── FAQ ── -->
-<section id="faq" class="section" style="background:var(--bg3);border-top:1px solid var(--line);">
+<section id="faq" class="section" style="background:#fafafa;border-top:1px solid var(--line);">
     <div class="section-max" style="max-width:780px;">
         <div class="suite-header reveal">
             <p class="s-eyebrow">06 — Frequently asked</p>
@@ -1291,7 +1278,7 @@
 </section>
 
 <!-- ── CONTACT ── -->
-<section id="contact" class="section" style="background:var(--bg);">
+<section id="contact" class="section">
     <div class="section-max">
         <div class="contact-wrap reveal">
             <p class="s-eyebrow">05 — Get in touch</p>
